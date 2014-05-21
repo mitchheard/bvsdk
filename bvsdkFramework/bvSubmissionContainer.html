@@ -18,7 +18,7 @@
 			"locationHostName" : "localhost",
 			"locationPort" : ":8888",
 			"locationPathname" : "",
-			"localPathToSDK" : "/bv-amplify/bvsdkFramework/",
+			"localPathToSDK" : "/bvsdk/bvsdkFramework/",
 
 			// for local testing using github
 			// "locationProtocol" : "https://",
@@ -37,10 +37,24 @@
 			head.appendChild(script);
 		</script>
 		<!-- client can paste direct URL to bv.init file -->
-		<!-- <script src="http://localhost:8888/bv-amplify/bvsdkFramework/js/bv.init.1.0.0.js" type="text/javascript"></script> -->
+		<!-- <script src="http://localhost:8888/bvsdk/bvsdkFramework/js/bv.init.1.0.0.js" type="text/javascript"></script> -->
+		<style>
+			body {
+				font-family: arial, verdana, sans-serif;
+				color: #333333;
+			}
+			section {
+				width: 70%;
+				clear: both;
+				margin: 50px auto 0;
+				padding: 0 0 50px;
+			}
+		</style>
 	</head>
 
 	<body>
-		<div id="BVSubmissionContainer" data-bv-target='submission-container-widget-universal'></div>
+		<section>
+			<div id="BVSubmissionContainer" data-bv-target='submission-container-widget-universal'></div>
+		</section>
 	</body>
 </html>

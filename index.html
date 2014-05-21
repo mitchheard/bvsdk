@@ -48,18 +48,12 @@
 			"locationHostName" : "localhost",
 			"locationPort" : ":8888",
 			"locationPathname" : "",
-			"localPathToSDK" : "/bv-amplify/bvsdkFramework/",
-
-			// for local testing using github
-			// "locationProtocol" : "https://",
-			// "locationHostName" : "rawgithub.com",
-			// "locationPort" : "", // must begin with colon ':'
-			// "locationPathname" : "",
-			// "localPathToSDK" : "/brianadamsdesigns/strategic-services/master/clinique/bvsdkFramework", // must begin with backslash '/'
+			"localPathToSDK" : "/bvsdk/bvsdkFramework/",
 
 		}
 		</script>
 		<!-- creates URL for bv.init file from the bvConfigSDK object -->
+		<!--
 		<script>
 			var src = bvConfigSDK["locationProtocol"] + bvConfigSDK["locationHostName"] + bvConfigSDK["locationPort"] + bvConfigSDK["localPathToSDK"] + "js/bv.init.1.0.0.js";
 			var script = document.createElement('script');
@@ -68,8 +62,9 @@
 			var head = document.getElementsByTagName('head')[0];
 			head.appendChild(script);
 		</script>
+		-->
 		<!-- client can paste direct URL to bv.init file -->
-		<!-- <script src="http://localhost:8888/bv-amplify/bvsdkFramework/js/bv.init.1.0.0.js" type="text/javascript"></script> -->
+		<script src="http://localhost:8888/bvsdk/bvsdkFramework/js/bv.init.1.0.0.js" type="text/javascript"></script>
 		<style>
 			body {
 				font-family: arial, verdana, sans-serif;
@@ -87,10 +82,6 @@
 
 	<body>
 		<section>
-			<h1>Tag Cloud</h1>
-			<div id="BVRRTagCloudContainer" data-bv-target='ugc-container-tagcloud-widget-universal'></div>
-		</section>
-		<section>
 			<h1>RR Feature Reviews Widget</h1>
 			<div id="BVRRFeaturedContainer" data-bv-target='ugc-container-featured-widget-review'></div>
 		</section>
@@ -101,6 +92,10 @@
 				<div class="helpfulseparator">VS.</div>
 				<div id="BVRRHelpfulLowContainer" class="leasthelpful" data-bv-target='ugc-container-helpful-low-widget-review'></div>
 			</div>
+		</section>
+		<section>
+			<h1>Tag Cloud</h1>
+			<div id="BVRRTagCloudContainer" data-bv-target='ugc-container-tagcloud-widget-universal'></div>
 		</section>
 		<section>
 			<h1>Primary Summary</h1>
