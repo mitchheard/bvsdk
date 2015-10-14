@@ -106,6 +106,17 @@ $bvsdk.extend(true, bvsdk, {
 					"page" : "#bvtemplate-header-page-review-comment",
 					"section" : "#bvtemplate-header-section-review-comment",
 				},
+
+
+				"question": {
+					"page" : "#bvtemplate-header-page-question",
+					"section" : "#bvtemplate-header-section-question",
+				},
+
+				"answer": {
+					"page" : "#bvtemplate-header-page-answer",
+					"section" : "#bvtemplate-header-section-answer",
+				},
 			},
 
 			/********** histograms **********/
@@ -138,6 +149,8 @@ $bvsdk.extend(true, bvsdk, {
 					"radio-rating-overall" : "#bvtemplate-input-radio-rating-overall-universal",
 					"radio-rating-secondary" : "#bvtemplate-input-radio-rating-secondary-universal",
 				},
+
+				// TODO: Question/Answer Submission
 			},
 
 			/********** overlays **********/
@@ -175,6 +188,8 @@ $bvsdk.extend(true, bvsdk, {
 			},
 
 			/********** submission containers and fields **********/
+
+			// TODO: Question/Answer
 
 			"submission" : {
 
@@ -237,7 +252,7 @@ $bvsdk.extend(true, bvsdk, {
 
 			/********** general display items **********/
 
-			"ugc" : {
+			"ugc" : { // TODO: what is this universal used for?
 				
 				"universal" : {
 					"container-quicktake" : "#bvtemplate-quick-take-universal", // quick take module
@@ -308,6 +323,37 @@ $bvsdk.extend(true, bvsdk, {
 					"photo-individual" : "#bvtemplate-photo-thumbnail-individual-review-comment",
 					"video-individual" : "#bvtemplate-video-thumbnail-individual-review-comment",
 				},
+
+				"question": {
+					"container-summary-primary" : "#bvtemplate-summary-primary-question", // primary summary module
+					"container-summary-primary-nocontent" : "#bvtemplate-summary-primary-nocontent-question", // primary summary module - no questions
+					"container-widget" : "#bvtemplate-widget-question", // entire question widget
+					"container-widget-nocontent" : "#bvtemplate-widget-nocontent-question", // entire question widget
+					"container-individual" : "#bvtemplate-individual-question",
+					"title" : "#bvtemplate-title-question",
+					"body" : "#bvtemplate-body-question",
+					"date" : "#bvtemplate-date-question",
+					"nickname" : "#bvtemplate-nickname-question",
+					"location" : "#bvtemplate-location-question",
+					"photo-individual" : "#bvtemplate-photo-thumbnail-individual-question",
+					"video-individual" : "#bvtemplate-video-thumbnail-individual-question",
+				},
+
+				"answer" : {
+					"container-summary-primary" : "#bvtemplate-summary-primary-answer", // primary summary module
+					"container-summary-primary-nocontent" : "#bvtemplate-summary-primary-nocontent-answer", // primary summary module - no answers
+					"container-widget" : "#bvtemplate-widget-answer", // entire answer widget
+					"container-widget-nocontent" : "#bvtemplate-widget-nocontent-answer", // entire answer widget
+					"container-individual" : "#bvtemplate-individual-answer",
+					"title" : "#bvtemplate-title-answer",
+					"body" : "#bvtemplate-body-answer",
+					"date" : "#bvtemplate-date-answer",
+					"nickname" : "#bvtemplate-nickname-answer",
+					"location" : "#bvtemplate-location-answer",
+					"photo-individual" : "#bvtemplate-photo-thumbnail-individual-answer",
+					"video-individual" : "#bvtemplate-video-thumbnail-individual-answer",
+				},
+
 			},
 		},
 

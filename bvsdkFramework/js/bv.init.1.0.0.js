@@ -1,3 +1,5 @@
+// TODO: [mheard] add controllers and other configuration settions, see individual comments below
+
 (function(window, document, undefined) {
 
 	window.bvsdk = {
@@ -98,7 +100,8 @@
 							$bvsdk.getScript(bvsdk.models.config.siteBaseURL + "models/varsContainers.js"),
 							$bvsdk.getScript(bvsdk.models.config.siteBaseURL + "models/modelsGlobal.js"),
 							$bvsdk.getScript(bvsdk.models.config.siteBaseURL + "models/modelsAPICalls.js"),
-							$bvsdk.getScript(bvsdk.models.config.siteBaseURL + "models/modelsReviews.js")
+							$bvsdk.getScript(bvsdk.models.config.siteBaseURL + "models/modelsReviews.js"),
+							$bvsdk.getScript(bvsdk.models.config.siteBaseURL + "models/modelsQuestions.js")
 						).done(function(){
 							// load controllers, plugins, and css files
 							$bvsdk.when(

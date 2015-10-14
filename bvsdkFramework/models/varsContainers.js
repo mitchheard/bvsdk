@@ -1,3 +1,5 @@
+// TODO: [mheard] lots to do here, see individual comments below
+
 $bvsdk.extend(true, bvsdk, {
 
 	models : {
@@ -43,6 +45,8 @@ $bvsdk.extend(true, bvsdk, {
 					"toggle" : "[data-bv-target='button-toggle-review-comment']", // toggle review comments button
 					"write" : "[data-bv-target='button-write-review-comment']", // write reveiw comment button
 				},
+
+				// TODO: Questions & Answers
 			},
 
 			/********** feedback and inappropriate **********/
@@ -98,6 +102,8 @@ $bvsdk.extend(true, bvsdk, {
 					"section" : "[data-bv-target='header-section-review-comment']",
 					"section-ugc" : "[data-bv-target='header-section-ugc-review-comment']", // inappropriate section header container
 				},
+
+				// TODO: Questions & Answers
 			},
 
 			/********** histograms **********/
@@ -151,6 +157,8 @@ $bvsdk.extend(true, bvsdk, {
 				"review-comment" : {
 					"container-widget" : "[data-bv-target='pagination-container-widget-review-comment']",
 				},
+
+				// TODO: Questions & Answers
 			},
 
 			/********** product catalog **********/
@@ -205,6 +213,8 @@ $bvsdk.extend(true, bvsdk, {
 					"title" : "[data-bv-target='submission-ugc-title-universal']",
 					"body" : "[data-bv-target='submission-ugc-body-universal']",
 				},
+
+				// TODO: Questions & Answers, any needed to be added?
 			},
 
 			/********** general display items **********/
@@ -261,6 +271,21 @@ $bvsdk.extend(true, bvsdk, {
 					"container-group" : "[data-bv-target='ugc-container-group-review-comment']",
 					"container-individual" : "[data-bv-target='ugc-container-individual-review-comment']",
 				},
+
+				// TODO: Questions & Answers
+
+				"question" : {
+					"container-summary-primary" : "[data-bv-target='ugc-container-summary-primary-question']", // primary summary module
+					"container-widget" : "[data-bv-target='ugc-container-widget-question']", // entire question widget
+					"container-group" : "[data-bv-target='ugc-container-group-question']", // TODO: what is this, remove it?
+					"container-individual" : "[data-bv-target='ugc-container-individual-question']",
+				},
+
+				"answer" : {
+					"container-widget" : "[data-bv-target='ugc-container-widget-answer']", // entire answer widget
+					"container-group" : "[data-bv-target='ugc-container-group-answer']",
+					"container-individual" : "[data-bv-target='ugc-container-individual-answer']",
+				},
 			},
 		},
 
@@ -292,6 +317,8 @@ $bvsdk.extend(true, bvsdk, {
 				"rating-star-image-unfilled" : "[data-bv-container='rating-star-image-unfilled']",
 				"rating-star-text" : "[data-bv-container='rating-star-text']",
 			},
+
+			// TODO: Questions & Answers, any need to be added>
 		},
 
 	},

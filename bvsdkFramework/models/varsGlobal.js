@@ -1,3 +1,7 @@
+// TODO: [mheard] allow client to set variables (passkey, apiVersion, customerName) in initial call or hide from client?
+// TODO: [mheard] clean up stories and test for Question & Answers
+// TODO: [mheard] hosted auth configuration
+
 $bvsdk.extend(true, bvsdk, {
 
 	models : {
@@ -52,7 +56,7 @@ $bvsdk.extend(true, bvsdk, {
 
 
 			/***** hosted authentication *****/
-
+			// TODO: [mheard] Complete Hosted Auth ability
 
 			bvHostedAuth : false,
 

@@ -1,3 +1,5 @@
+// TODO: [mheard] remove stories and update/test for Question & Answers (what else is needed?)
+
 var settings = $bvsdk.extend(true, {
 	"parentContainer":"", // NO DEFAULT
 	"targetContainer":"",

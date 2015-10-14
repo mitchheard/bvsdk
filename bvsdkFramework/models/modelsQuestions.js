@@ -1,3 +1,4 @@
+// TODO: [mheard] Modify for Question & Answers, currently copied from Modelsquestions.js
 $bvsdk.extend(true, bvsdk, {
 
 	models : {
@@ -41,7 +42,7 @@ $bvsdk.extend(true, bvsdk, {
 		},
 
 		sorting : {
-
+// TODO: fix this for Question & Answer
 			reviewLoadOrder : [
 				// blank option to start
 				{

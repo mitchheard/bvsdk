@@ -439,7 +439,41 @@
 
 
 
+<!-- ********** questions ********** -->
 
+
+
+
+
+<!-- review page header template -->
+<script id="bvtemplate-header-page-question" type="html">
+	<h1 class="BVPageHeaderText" data-bv-content="['header-page']"></h1>
+</script>
+
+<!-- review section header template -->
+<script id="bvtemplate-header-section-question" type="html">
+	<h2 class="BVSectionHeaderText" data-bv-content="['header-section']"></h2>
+</script>
+
+
+
+
+
+<!-- ********** answers ********** -->
+
+
+
+
+
+<!-- review comment page header template -->
+<script id="bvtemplate-header-page-review-answer" type="html">
+	<h1 class="BVPageHeaderText" data-bv-content="['header-page']"></h1>
+</script>
+
+<!-- univerreview commentsal section header template -->
+<script id="bvtemplate-header-section-review-answer" type="html">
+	<h2 class="BVSectionHeaderText" data-bv-content="['header-section']"></h2>
+</script>
 
 
 
@@ -494,7 +528,7 @@
 	</div>
 </script>
 
-<!-- universal clsoe button template -->
+<!-- universal close button template -->
 <script id="bvtemplate-button-close-universal" type="html">
 	<div id="" class="BVButtonWrapper BVCloseButtonWrapper">
 		<a id="" class="BVButton BVButtonClose" title="" name="" onclick="return false;" href="" data-bv-container="button">
@@ -528,6 +562,7 @@
 <!-- ********** reviews ********** -->
 
 
+<!-- TODO: Questions & Answers buttons -->
 
 
 
@@ -598,7 +633,7 @@
 
 
 
-<!-- ********** reviews ********** -->
+<!-- ********** review comments ********** -->
 
 
 
@@ -802,7 +837,7 @@
 
 
 
-
+<!-- TODO: Questions and Answers -->
 
 <!-- ********** reviews ********** -->
 
@@ -1226,7 +1261,7 @@
 <!-- **************************************** INDIVIDUAL CONTAINERS **************************************** -->
 
 
-
+<!-- TODO: Questions and Answers -->
 
 
 <!-- ********** individual item containers ********** -->
@@ -1406,7 +1441,44 @@
 </script>
 
 
+<!-- *** question and answer *** -->
 
+<!-- question individual template -->
+<script id="bvtemplate-individual-question" type="html">
+	<article id="" class="BVQuestionContainer">
+		<div class="BVUGCSpacerTop"></div>
+		<div class="BVBadgesContentContainer" data-bv-target='badge-container-group-content-universal'></div>
+		<div class="BVUGCHeader">
+			<div class="BVTitleContainer" data-bv-target='ugc-title-universal'></div>
+			<div class="BVOverallRatingContainer" data-bv-target='ugc-rating-overall-review'></div>
+		</div>
+		<div class="BVUserDataContainer">
+			<div class="BVAvatar">
+				<img src="" data-img-url="images/noAvatar.gif" width="40" height="41" alt="" border="0" />
+			</div>
+			<div class="BVUserInfo">
+				<div class="BVUserNicknameContainer" data-bv-target='ugc-nickname-universal'></div>
+				<div class="BVUserLocationContainer" data-bv-target='ugc-location-universal'></div>
+				<div class="BVDateContainer" data-bv-target='ugc-date-universal'></div>
+				<div class="BVBadgesUserContainer" data-bv-target='badge-container-group-user-universal'></div>
+			</div>
+		</div>
+		<div class="BVUGCPrimaryContent">
+			<div class="BVBodyTextContainer" data-bv-target='ugc-body-universal'></div>
+		</div>
+		<div class="BVUGCSecondaryContent">
+			<div class="BVSecondaryRatingsContainer" data-bv-target='ugc-rating-secondary-group-review'></div>
+			<div class="BVUGCMediaContent">
+				<div class="BVPhotoGroupContainer" data-bv-target='ugc-photo-group-universal'></div>
+				<div class="BVVideoGroupContainer" data-bv-target='ugc-video-group-universal'></div>
+			</div>
+		</div>
+		<div class="BVFeedbackContainer" data-bv-target='feedback-container-widget-universal'></div>
+		<div class="BVUGCCommentContent">
+			<div class="BVAnswersWidgetContainer" data-bv-target='ugc-container-widget-answer'></div>
+		</div>
+	</article>
+</script>
 
 
 
@@ -1417,7 +1489,7 @@
 <!-- **************************************** PRODUCT WIDGETS **************************************** -->
 
 
-
+<!-- TODO: Questions and Answers ??? -->
 
 
 <!-- ********** product widgets ********** -->
@@ -1500,7 +1572,7 @@
 <!-- **************************************** PRIMARY SUMMARY **************************************** -->
 
 
-
+<!-- TODO: Questions and Answers -->
 
 
 <!-- ********** primary summary widgets ********** -->
@@ -1513,7 +1585,7 @@
 
 <!-- universal primary summary template -->
 <script id="bvtemplate-summary-primary-universal" type="html">
-	<div class="BVPrimarySummaryContainer">
+	<div class="BVSummaryContainer">
 		<div class="BVOverallRatingContainer" data-bv-target='ugc-rating-overall-review'></div>
 		<div class="BVHistogramWidgetContainer" data-bv-target='histogram-container-widget-universal'></div>
 		<div class="BVButtonWriteReviewContainer" data-bv-target='button-write-review'></div>
@@ -1524,7 +1596,7 @@
 
 <!-- universal primary summary template with no content -->
 <script id="bvtemplate-summary-primary-nocontent-universal" type="html">
-	<div class="BVPrimarySummaryContainer BVPrimarySummaryContainerNoContent">
+	<div class="BVSummaryContainer BVSummaryContainerNoContent">
 		<div class="BVOverallRatingContainer" data-bv-target='ugc-rating-overall-review'></div>
 		<div class="BVButtonWriteReviewContainer" data-bv-target='button-write-review'></div>
 	</div>
@@ -1534,7 +1606,7 @@
 
 <!-- review primary summary template -->
 <script id="bvtemplate-summary-primary-review" type="html">
-	<div class="BVPrimarySummaryContainer">
+	<div class="BVSummaryContainer">
 		<div class="BVOverallRatingContainer" data-bv-target='ugc-rating-overall-review'></div>
 		<div class="BVHistogramWidgetContainer" data-bv-target='histogram-container-widget-universal'></div>
 		<div class="BVButtonWriteReviewContainer" data-bv-target='button-write-review'></div>
@@ -1545,7 +1617,7 @@
 
 <!-- review primary summary template with no content -->
 <script id="bvtemplate-summary-primary-nocontent-review" type="html">
-	<div class="BVPrimarySummaryContainer BVPrimarySummaryContainerNoContent">
+	<div class="BVSummaryContainer BVSummaryContainerNoContent">
 		<div class="BVOverallRatingContainer" data-bv-target='ugc-rating-overall-review'></div>
 		<div class="BVButtonWriteReviewContainer" data-bv-target='button-write-review'></div>
 	</div>
@@ -1555,7 +1627,7 @@
 
 <!-- review comment primary summary template -->
 <script id="bvtemplate-summary-primary-review-comment" type="html">
-	<div class="BVPrimarySummaryContainer">
+	<div class="BVSummaryContainer">
 		<div class="BVOverallRatingContainer" data-bv-target='ugc-rating-overall-review'></div>
 		<div class="BVHistogramWidgetContainer" data-bv-target='histogram-container-widget-universal'></div>
 		<div class="BVButtonWriteReviewCommentContainer" data-bv-target='button-write-review-comment'></div>
@@ -1566,13 +1638,22 @@
 
 <!-- review comment primary summary template with no content -->
 <script id="bvtemplate-summary-primary-nocontent-review-comment" type="html">
-	<div class="BVPrimarySummaryContainer BVPrimarySummaryContainerNoContent">
+	<div class="BVSummaryContainer BVSummaryContainerNoContent">
 		<div class="BVOverallRatingContainer" data-bv-target='ugc-rating-overall-review'></div>
 		<div class="BVButtonWriteReviewCommentContainer" data-bv-target='button-write-review-comment'></div>
 	</div>
 </script>
 
-
+<!-- question primary summary template -->
+<script id="bvtemplate-summary-primary-question" type="html">
+	<div class="BVSummaryContainer">
+		<div class="BVOverallRatingContainer" data-bv-target='ugc-rating-overall-review'></div>
+		<div class="BVHistogramWidgetContainer" data-bv-target='histogram-container-widget-universal'></div>
+		<div class="BVButtonWriteReviewContainer" data-bv-target='button-write-review'></div>
+		<span class="BVButtonSeparator"> | </span>
+		<div class="BVButtonReadReviewsContainer" data-bv-target='button-read-review'></div>
+	</div>
+</script>
 
 
 
@@ -1584,7 +1665,7 @@
 <!-- **************************************** QUICKTAKE **************************************** -->
 
 
-
+<!-- TODO: Questions and Answers ??? -->
 
 
 <!-- ********** quicktake widgets ********** -->
@@ -1767,7 +1848,7 @@
 
 <!-- **************************************** SUBMISSION **************************************** -->
 
-
+<!-- TODO: Questions and Answers -->
 
 
 
@@ -1961,7 +2042,7 @@
 </script>
 
 
-
+<!-- TODO: Questions and Answers -->
 
 
 <!-- ********** submission form preview section ********** -->
@@ -2025,7 +2106,7 @@
 </script>
 
 
-
+<!-- TODO: Questions and Answers -->
 
 
 <!-- ********** submission form thank you section ********** -->
@@ -2077,7 +2158,7 @@
 </script>
 
 
-
+<!-- TODO: Questions and Answers -->
 
 
 <!-- ********** universal submission field ********** -->

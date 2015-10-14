@@ -14,7 +14,7 @@
 /* GENERAL */
 
 	/* Font Styles */
-	#BVRRContainer, #BVRRPrimarySummaryContainer, #BVSubmissionContainer {font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #333333; line-height: 1.5em;}
+	#BVRRContainer, #BVRRSummaryContainer, #BVSubmissionContainer {font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #333333; line-height: 1.5em;}
 
 	/* Titles, Labels, Values */
 	.BVTitle {font-size: 18px; font-weight: bold; line-height: normal;}
@@ -28,13 +28,13 @@
 
 
 /* PRIMARY SUMMARY */
-	#BVRRPrimarySummaryContainer {display: inline-block; vertical-align: middle;}
-		.BVPrimarySummaryContainer .BVOverallRatingContainer {display: inline-block; vertical-align: middle; margin-right: 10px;}
-		.BVPrimarySummaryContainer .BVRatingLabelText {display: none;}
+	#BVRRSummaryContainer {display: inline-block; vertical-align: middle;}
+		.BVSummaryContainer .BVOverallRatingContainer {display: inline-block; vertical-align: middle; margin-right: 10px;}
+		.BVSummaryContainer .BVRatingLabelText {display: none;}
 
-		.BVPrimarySummaryContainer .BVButtonWriteReviewContainer {display: inline-block; vertical-align: middle; margin-right: 10px;}
-		.BVPrimarySummaryContainer .BVButtonReadReviewsContainer {display: inline-block; vertical-align: middle;}
-		.BVPrimarySummaryContainer .BVButtonSeparator {display: inline-block; vertical-align: middle; margin-right: 10px;}
+		.BVSummaryContainer .BVButtonWriteReviewContainer {display: inline-block; vertical-align: middle; margin-right: 10px;}
+		.BVSummaryContainer .BVButtonReadReviewsContainer {display: inline-block; vertical-align: middle;}
+		.BVSummaryContainer .BVButtonSeparator {display: inline-block; vertical-align: middle; margin-right: 10px;}
 
 
 
@@ -123,11 +123,11 @@
 		.BVQuickTakeContainer .BVOverallRatingWrapper {width: 100%; display: inline-block; vertical-align: bottom;}
 		.BVQuickTakeContainer .BVOverallRatingWrapper .BVRatingLabelText {display: none;}
 			.BVQuickTakeContainer .BVOverallRatingContainer .BVRatingStarsContainer {width: 50%; min-width: 170px; max-width: 300px; display: inline-block; vertical-align: bottom;}
-			.BVPrimarySummaryContainer .BVOverallRatingContainer .BVRatingStarsContainer {width: 80px; height: 21px;}
+			.BVSummaryContainer .BVOverallRatingContainer .BVRatingStarsContainer {width: 80px; height: 21px;}
 			.BVQuickTakeContainer .BVOverallRatingContainer .BVRatingOutOfContainer {font-weight: bold; line-height: 33px; font-size: 34px; color: #333333; display: inline-block; vertical-align: middle;}
-			.BVPrimarySummaryContainer .BVOverallRatingContainer .BVRatingOutOfContainer {font-weight: bold; line-height: 18px; font-size: 14px; color: #333333; display: inline-block; vertical-align: middle;}
+			.BVSummaryContainer .BVOverallRatingContainer .BVRatingOutOfContainer {font-weight: bold; line-height: 18px; font-size: 14px; color: #333333; display: inline-block; vertical-align: middle;}
 				.BVQuickTakeContainer .BVOverallRatingContainer .BVRatingSeparator, .BVQuickTakeContainer .BVOverallRatingContainer .BVRatingRange {display: none;}
-				.BVPrimarySummaryContainer .BVOverallRatingContainer .BVRatingSeparator, .BVPrimarySummaryContainer .BVOverallRatingContainer .BVRatingRange {display: none;}
+				.BVSummaryContainer .BVOverallRatingContainer .BVRatingSeparator, .BVSummaryContainer .BVOverallRatingContainer .BVRatingRange {display: none;}
 		
 		/* Buy Again */
 		.BVQuickTakeContainer .BVRecommendedContainerAverage {width: 320px; display: inline-block; vertical-align: middle; background: url(../images/backgroundBuyAgain.gif) no-repeat; padding: 0 0 0 87px; font-size: 14px;}
@@ -530,7 +530,7 @@
 
 
 /* widget search */
-	#BVRRContainer, #BVRRPrimarySummaryContainer, #BVSubmissionContainer, #BVRRFeaturedContainer, #BVRRHelpfulVersusContainer {font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #333333; line-height: 1.5em;}
+	#BVRRContainer, #BVRRSummaryContainer, #BVSubmissionContainer, #BVRRFeaturedContainer, #BVRRHelpfulVersusContainer {font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #333333; line-height: 1.5em;}
 	#BVRRFeaturedContainer, #BVRRHelpfulVersusContainer {width: 100%; margin: 0 auto;}
 	#BVRRHelpfulVersusContainer {}
 	#BVRRHelpfulHighContainer, #BVRRHelpfulLowContainer {width: 47.5%; min-width: 280px; display: inline-block; vertical-align: top; clear: none; border: solid 1px #ecf0f1; border-width: 0 1px 0 0; padding: 0 1%;}
