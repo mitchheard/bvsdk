@@ -323,7 +323,7 @@ $bvsdk.extend(true, bvsdk, {
 					"photo-individual" : "#bvtemplate-photo-thumbnail-individual-review-comment",
 					"video-individual" : "#bvtemplate-video-thumbnail-individual-review-comment",
 				},
-
+				// TODO: [mheard] Create templates in varsTemplates.js  
 				"question": {
 					"container-summary-primary" : "#bvtemplate-summary-primary-question", // primary summary module
 					"container-summary-primary-nocontent" : "#bvtemplate-summary-primary-nocontent-question", // primary summary module - no questions

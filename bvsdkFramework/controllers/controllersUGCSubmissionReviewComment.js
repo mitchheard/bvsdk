@@ -455,13 +455,13 @@ $bvsdk.extend(true, bvsdk, {
 					$container.append($template);
 
 					// load ugc title
-					if (content["Title"]) {
+					if (content["Title"] || content["QuestionSummary"]) {
 						bvsdk.controllers.ugc.universal.loadUGCTitle (content, {
 							"parentContainer":$template,
 						});
 					}
 					// load ugc text
-					if (content["ReviewText"] || content["QuestionText"] || content["AnswerText"] || content["StoryText"] || content["CommentText"]) {
+					if (content["ReviewText"] || content["QuestionDetails"] || content["AnswerText"] || content["StoryText"] || content["CommentText"]) {
 						bvsdk.controllers.ugc.universal.loadUGCBody (content, {
 							"parentContainer":$template,
 						});

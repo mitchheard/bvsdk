@@ -96,6 +96,8 @@
 
 
 
+
+
 <!-- **************************************** FILTERS **************************************** -->
 
 
@@ -466,12 +468,12 @@
 
 
 <!-- review comment page header template -->
-<script id="bvtemplate-header-page-review-answer" type="html">
+<script id="bvtemplate-header-page-answer" type="html">
 	<h1 class="BVPageHeaderText" data-bv-content="['header-page']"></h1>
 </script>
 
 <!-- univerreview commentsal section header template -->
-<script id="bvtemplate-header-section-review-answer" type="html">
+<script id="bvtemplate-header-section-answer" type="html">
 	<h2 class="BVSectionHeaderText" data-bv-content="['header-section']"></h2>
 </script>
 
@@ -1561,8 +1563,46 @@
 </script>
 
 
+<!-- *** question *** -->
 
+<!-- question widget template -->
+<script id="bvtemplate-widget-question" type="html">
+	<div class="BVQuestionsWidgetContainer">
+		<div class="BVPageHeaderContainer" data-bv-target='header-page-universal'></div>
+		<div class="BVReviewBodyContainer" data-bv-target='ugc-container-group-question'></div>
+		<div class="BVReviewPaginationContainer" data-bv-target='pagination-container-widget-question'></div>
+	</div>
+</script>
 
+<!-- review widget no reviews template -->
+<script id="bvtemplate-widget-nocontent-question" type="html">
+	<div class="BVQuestionWidgetContainer">
+		<div class="BVPageHeaderContainer" data-bv-target='header-page-universal'></div>
+		<div class="BVQuickTakeContainer" data-bv-target='container-quicktake-review'></div>
+	</div>
+</script>
+
+<!-- *** answer *** -->
+
+<!-- answer widget template -->
+<script id="bvtemplate-widget-answer" type="html">
+	<div class="BVReviewComments">
+		<div class="BVButtonToggleReviewCommentsContainer" data-bv-target='button-toggle-review-comment'></div>
+		<div class="BVButtonWriteReviewCommentContainer" data-bv-target='button-write-review-comment'></div>
+		<div class="BVReviewCommentsToggleContainer" data-bv-container="toggle-review-comment">
+			<div class="BVSectionHeader BVSectionHeaderReviewCommentsContainer" data-bv-target='header-section-ugc-review-comment'></div>
+			<div class="BVReviewCommentBodyContainer" data-bv-target='ugc-container-group-review-comment'></div>
+			<div class="BVReviewCommentsPaginationContainer" data-bv-target='pagination-container-widget-review-comment'></div>
+		</div>
+	</div>
+</script>
+
+<!-- answer widget no answers template -->
+<script id="bvtemplate-widget-nocontent-answer" type="html">
+	<div class="BVReviewComments">
+		<div class="BVButtonWriteReviewCommentContainer" data-bv-target='button-write-review-comment'></div>
+	</div>
+</script>
 
 
 
@@ -1649,9 +1689,9 @@
 	<div class="BVSummaryContainer">
 		<div class="BVOverallRatingContainer" data-bv-target='ugc-rating-overall-review'></div>
 		<div class="BVHistogramWidgetContainer" data-bv-target='histogram-container-widget-universal'></div>
-		<div class="BVButtonWriteReviewContainer" data-bv-target='button-write-review'></div>
+		<div class="BVButtonWriteQuestionContainer" data-bv-target='button-write-quesiton'></div>
 		<span class="BVButtonSeparator"> | </span>
-		<div class="BVButtonReadReviewsContainer" data-bv-target='button-read-review'></div>
+		<div class="BVButtonReadQuestionsContainer" data-bv-target='button-read-question'></div>
 	</div>
 </script>
 

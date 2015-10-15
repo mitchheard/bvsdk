@@ -97,8 +97,8 @@
 							// }),
 							// models
 							$bvsdk.getScript(bvsdk.models.config.siteBaseURL + "models/varsTemplates.js"),
-							$bvsdk.getScript(bvsdk.models.config.siteBaseURL + "models/varsContainers.js"),
-							$bvsdk.getScript(bvsdk.models.config.siteBaseURL + "models/modelsGlobal.js"),
+							$bvsdk.getScript(bvsdk.models.config.siteBaseURL + "models/varsContainers.js"),		
+							$bvsdk.getScript(bvsdk.models.config.siteBaseURL + "models/modelsGlobal.js"),		
 							$bvsdk.getScript(bvsdk.models.config.siteBaseURL + "models/modelsAPICalls.js"),
 							$bvsdk.getScript(bvsdk.models.config.siteBaseURL + "models/modelsReviews.js"),
 							$bvsdk.getScript(bvsdk.models.config.siteBaseURL + "models/modelsQuestions.js")
@@ -151,7 +151,7 @@
 										bvsdk.controllers.ugc.review.initVersusUGCWidget ();
 										bvsdk.controllers.ugc.review.initTagCloud ();
 										// ask and answer
-
+										bvsdk.controllers.ugc.question.initQuestionAnswerWidget ();
 										// stories
 
 										break;

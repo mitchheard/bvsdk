@@ -644,10 +644,10 @@ $bvsdk.extend(true, bvsdk, {
 			answer : {
 
 				// gets answer submission form
-				getForm : function (questionid, container, callBack, options) {
+				getForm : function (questionID, container, callBack, options) {
 					var settings = $bvsdk.extend(true, {
 						"Parameters":{
-							"questionid":questionid,
+							"questionid":questionID,
 							"userid":null
 						}
 					}, options);
@@ -674,10 +674,10 @@ $bvsdk.extend(true, bvsdk, {
 				},
 
 				// posts review comment submission form
-				postForm : function (questionid, container, callBack, options) {
+				postForm : function (questionID, container, callBack, options) {
 					var settings = $bvsdk.extend(true, {
 						"Parameters":{
-							"questionid":questionid,
+							"questionid":questionID,
 							"userid":null
 						}
 					}, options);
@@ -739,6 +739,7 @@ $bvsdk.extend(true, bvsdk, {
 							"photocaption_<n>":null, //Value is caption text for the photo URL with the same value of <n>.
 							"photourl_<n>":null, //Value is a Bazaarvoice URL of a photo uploaded using the Data API, where <n> is a non-negative integer.
 							"productrecommendationid_<n>":null, //Value is non-negative integer representing the product external ID of the <n>'th product recommendation (for Social Recommendations)
+							"questionid":null,
 							"reviewid":null, //The id of the review that this comment is being submitted on. One ReviewId or StoryId is required.
 							"sendemailalertwhenpublished":null, //Boolean indicating whether or not the user wants to be notified when his/her content is published.
 							"storyid":null, //The id of the story that this comment is being submitted on. One ReviewId or StoryId is required.
@@ -1049,6 +1050,7 @@ $bvsdk.extend(true, bvsdk, {
 								"productid":null, //The identifier of the Product that the Review was written on.
 								"reviewid":null, //The identifier of the Review
 								"storyid":null, //The identifier of the Story
+								"questionid":null,
 								"submissionid":null, //Submission identifier assigned to the content when it was initially submitted
 								"submissiontime":null, //The submission date/time of the content. See the Introduction for an example of using advanced operators for filtering.
 								"totalfeedbackcount":null, //Number of feedbacks received
@@ -1075,6 +1077,7 @@ $bvsdk.extend(true, bvsdk, {
 								"lastmodificationtime":null, //The date/time of the latest modification of the content
 								"productid":null, //The identifier of the product
 								"reviewid":null, //The identifier of the Review
+								"questionid":null,
 								"storyid":null, //The identifier of the Story
 								"submissionid":null, //Submission identifier assigned to the content when it was initially submitted
 								"submissiontime":null, //The submission date/time of the content
@@ -1258,7 +1261,7 @@ $bvsdk.extend(true, bvsdk, {
 					var settings = $bvsdk.extend(true, {
 						"Parameters":{
 							"filter":{
-								"reviewid":questionID
+								"questionid":questionID
 							},
 						}
 					}, options);
@@ -1311,6 +1314,7 @@ $bvsdk.extend(true, bvsdk, {
 								"moderatorcode":null, //String value indicating the moderator code for rejected content, e.g., &Filter=ModeratorCode:eq:CR returns UGC that contains the CR (Competitor Reference) code. Multiple codes can be entered in a comma-delimited list, e.g., &Filter=ModeratorCode:eq:CS,IU returns UGC with either the CS (Customer Service Complaint) or the IU (Inappropriate/Unusable Content) code. For a list of all Moderator Codes, see the API Basics page. Note that the ModeratorCodes attribute parameter must be explicitly requested in order to use this filter. See the Parameters section above.
 								"productid":null, //The identifier of the Product that the Review was written on.
 								"reviewid":null, //The identifier of the Review
+								"questionid":null,
 								"storyid":null, //The identifier of the Story
 								"submissionid":null, //Submission identifier assigned to the content when it was initially submitted
 								"submissiontime":null, //The submission date/time of the content. See the Introduction for an example of using advanced operators for filtering.

@@ -46,6 +46,16 @@ $bvsdk.extend(true, bvsdk, {
 					"write" : "[data-bv-target='button-write-review-comment']", // write reveiw comment button
 				},
 
+				"question" : {
+					"read" : "[data-bv-target='button-read-question']", // read questions button
+					"write" : "[data-bv-target='button-write-question']", // write question button
+				},
+
+				"answer" : {
+					"toggle" : "[data-bv-target='button-toggle-answer']", // toggle answers button
+					"write" : "[data-bv-target='button-write-answer']", // write answer button
+				},
+
 				// TODO: Questions & Answers
 			},
 
@@ -103,6 +113,19 @@ $bvsdk.extend(true, bvsdk, {
 					"section-ugc" : "[data-bv-target='header-section-ugc-review-comment']", // inappropriate section header container
 				},
 
+				"question" : {
+					"page" : "[data-bv-target='header-page-question']",
+					"section" : "[data-bv-target='header-section-question']",
+					"section-ugc" : "[data-bv-target='header-section-ugc-question']", // inappropriate section header container
+					"section-submission-rating" : "[data-bv-target='header-section-submission-rating-question']", // inappropriate section header container
+				},
+
+				"answer" : {
+					"page" : "[data-bv-target='header-page-answer']",
+					"section" : "[data-bv-target='header-section-answer']",
+					"section-ugc" : "[data-bv-target='header-section-ugc-answer']", // inappropriate section header container
+				},
+
 				// TODO: Questions & Answers
 			},
 
@@ -156,6 +179,14 @@ $bvsdk.extend(true, bvsdk, {
 
 				"review-comment" : {
 					"container-widget" : "[data-bv-target='pagination-container-widget-review-comment']",
+				},
+
+				"question" : {
+					"container-widget" : "[data-bv-target='pagination-container-widget-question']",
+				},
+
+				"answer" : {
+					"container-widget" : "[data-bv-target='pagination-container-widget-answer']",
 				},
 
 				// TODO: Questions & Answers

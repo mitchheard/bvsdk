@@ -150,6 +150,7 @@ $bvsdk.extend(true, bvsdk, {
 				// template to process
 				var bvContent = content;
 				var temp = $bvsdk.parseHTML($bvsdk(template).html().trim());
+				//console.log(temp);
 				// find all images with data image urls
 				$bvsdk(temp).find("img[data-img-url]").andSelf().filter("img[data-img-url]").each(function() {
 					// use Modernizr to check for svg support
@@ -598,6 +599,70 @@ $bvsdk.extend(true, bvsdk, {
 					}
 				});
 			},
+
+			// write review button
+			loadWriteQuestionButton : function (content, callBack, options) {
+				var settings = $bvsdk.extend(true, {
+					"parentContainer":"",
+					"targetContainer":bvsdk.models.targets["button"]["question"]["write"],
+					"viewContainer":bvsdk.models.templates["button"]["universal"]["primary"],
+				}, options);
+				// set content
+				var bvContent = {
+					"button-label" : content,
+				};
+				// set container & template
+				var $container = $bvsdk(settings["parentContainer"]).find(settings["targetContainer"]).andSelf().filter(settings["targetContainer"]);
+				var $template = bvsdk.controllers.general.returnTemplate (bvContent, settings["viewContainer"]);
+				// add template
+				$container.append($template);
+
+				// set attributes
+				$bvsdk($template).find(bvsdk.models.objectVariables["container"]["button"]).andSelf().filter(bvsdk.models.objectVariables["container"]["button"]).attr({
+					"id":"",
+					"title":"",
+					"href":"",
+				}).click(function() {
+					if (callBack) {
+						callBack();
+					}
+				});
+			},
+
+			// read questions button (go-to)
+			loadReadQuestionsButton : function (content, callBack, options) {
+				var settings = $bvsdk.extend(true, {
+					"parentContainer":"",
+					"targetContainer":bvsdk.models.targets["button"]["question"]["read"],
+					"viewContainer":bvsdk.models.templates["button"]["universal"]["text"],
+				}, options);
+				// set content
+				var bvContent = {
+					"button-label" : content,
+				};
+				// set container & template
+				var $container = $bvsdk(settings["parentContainer"]).find(settings["targetContainer"]).andSelf().filter(settings["targetContainer"]);
+				var $template = bvsdk.controllers.general.returnTemplate (bvContent, settings["viewContainer"]);
+				// add template
+				$container.append($template);
+
+				// set variables
+				var productId = settings["productId"]
+				var returnURL = $bvsdk(location).attr("href") + "";
+
+				// set attributes
+				$bvsdk($template).find(bvsdk.models.objectVariables["container"]["button"]).andSelf().filter(bvsdk.models.objectVariables["container"]["button"]).attr({
+					"id":"",
+					"title":"",
+					"onclick":"",
+					"href":"#BVQAContainer",
+				}).click(function() {
+					if (callBack) {
+						callBack();
+					}
+				});
+			},
+
 
 			/***** SUBMISSION *****/
 

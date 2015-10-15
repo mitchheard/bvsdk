@@ -31,7 +31,7 @@ $bvsdk.extend(true, bvsdk, {
 					}, options);
 					// set content
 					var bvContent = {
-						"text-body" : content['ReviewText'] || content['QuestionText'] || content['AnswerText'] || content['StoryText'] || content['CommentText'],
+						"text-body" : content['ReviewText'] || content['QuestionDetails'] || content['AnswerText'] || content['StoryText'] || content['CommentText'],
 					};
 					// set container & template
 					var $container = $bvsdk(settings["parentContainer"]).find(settings["targetContainer"]).andSelf().filter(settings["targetContainer"]);

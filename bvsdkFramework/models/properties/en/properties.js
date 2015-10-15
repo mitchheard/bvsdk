@@ -56,6 +56,18 @@ $bvsdk.extend(true, bvsdk, {
 					"write" : "Post Comment", // write reveiw comment button
 					"write-first" : "Be the First to Post a Comment", // write reveiw comment button
 				},
+
+				"question" : {
+					"read" : "Read All Questions", // read questions button
+					"write" : "Ask a Question", // ask question button
+					"write-first" : "Be the First to Ask a Question About This Product", // ask first question button
+				},
+
+				"answer" : {
+					"toggle" : "Show/Hide Answers", // toggle review comments button
+					"write" : "Post Answer", // write reveiw comment button
+					"write-first" : "Be the First to Answer a Question", // write reveiw comment button
+				},
 			},
 				
 			/********** error messaging **********/
@@ -181,6 +193,41 @@ $bvsdk.extend(true, bvsdk, {
 					"section-inappropriate" : "Report Inappropriate",
 					"section-submission-error" : "Errors",
 					"section-submission-ugc" : "Your Comment",
+					"section-submission-user" : "User Info",
+					"section-submission-media" : "Media Upload",
+				},
+
+				"question" : {
+					"page" : "QQQuestions",
+					"page-nocontent" : "There are no questions for this product.",
+					"page-submission" : "Write Your Question",
+					"page-submission-preview" : "Preview Your Question",
+					"page-submission-thankyou" : "Thank You For Your Question",
+
+					/* widget search */
+					"page-featured" : "Featured Reviews",
+					"page-helpful-high" : "Most Helpful High Rated Question",
+					"page-helpful-low" : "Most Helpful Low Rated Question",
+
+					"section-ugc" : "",
+					"section-inappropriate" : "Report Inappropriate",
+					"section-submission-rating" : "Your Rating",
+					"section-submission-error" : "Errors",
+					"section-submission-ugc" : "Your Question",
+					"section-submission-user" : "User Info",
+					"section-submission-media" : "Media Upload",
+				},
+
+				"answer" : {
+					"page" : "AAAnswers",
+					"page-nocontent" : "There are no answers for this question.",
+					"page-submission" : "Write Your Answer",
+					"page-submission-preview" : "Preview Your Answer",
+					"page-submission-thankyou" : "Thank You For Your Answer",
+					"section-ugc" : "Question Answers",
+					"section-inappropriate" : "Report Inappropriate",
+					"section-submission-error" : "Errors",
+					"section-submission-ugc" : "Your Answer",
 					"section-submission-user" : "User Info",
 					"section-submission-media" : "Media Upload",
 				},
